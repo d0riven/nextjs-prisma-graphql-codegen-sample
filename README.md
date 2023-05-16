@@ -1,4 +1,4 @@
-これは [Next.js, Prisma, GraphQL Code Generator で作るフルスタックWebアプリケーション](https://booth.pm/ja/items/4162627) の写経リポジトリです。
+これは [Next.js, Prisma, GraphQL Code Generator で作るフルスタック Web アプリケーション](https://booth.pm/ja/items/4162627) の写経リポジトリです。
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
