@@ -284,6 +284,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@prisma/engines@npm:4.14.0":
+  version: 4.14.0
+  resolution: "@prisma/engines@npm:4.14.0"
+  checksum: 29ed3c439d46dc1d77baf05a56ed8392e720630e63be37a6d8ef45aee77358770c5cfd20d005108be2ac4867b8dfa5d83e0d88de9f1044351a26fc5f28486e3a
+  languageName: node
+  linkType: hard
+
 "@rushstack/eslint-patch@npm:^1.1.3":
   version: 1.2.0
   resolution: "@rushstack/eslint-patch@npm:1.2.0"
@@ -3098,6 +3105,7 @@ __metadata:
     npm-run-all: "npm:^4.1.5"
     postcss: "npm:8.4.23"
     prettier: "npm:^2.8.8"
+    prisma: "npm:^4.14.0"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     tailwindcss: "npm:3.3.2"
@@ -3626,6 +3634,18 @@ __metadata:
   bin:
     prettier: bin-prettier.js
   checksum: 38b0a43ea17e83f54b904f8808f7d0fd1d9705ef9627bb40017ee276cbd6f5e7d15bcf816c4467b64cfe14ef109369a981ce61fad9c6022749d041f74a672188
+  languageName: node
+  linkType: hard
+
+"prisma@npm:^4.14.0":
+  version: 4.14.0
+  resolution: "prisma@npm:4.14.0"
+  dependencies:
+    "@prisma/engines": "npm:4.14.0"
+  bin:
+    prisma: build/index.js
+    prisma2: build/index.js
+  checksum: 4d4839a64658a6731b940c7c4dddd888d342ccbe4df2c98e9305e3bdd9894bfacf00720010bf85b5a9025251140ed17d1549164b2baea44c5ed34c178fabb897
   languageName: node
   linkType: hard
 
