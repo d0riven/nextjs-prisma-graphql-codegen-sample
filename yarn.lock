@@ -12,7 +12,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.20.7":
+"@babel/runtime@npm:^7.20.13, @babel/runtime@npm:^7.20.7":
   version: 7.21.5
   resolution: "@babel/runtime@npm:7.21.5"
   dependencies:
@@ -144,6 +144,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next-auth/prisma-adapter@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "@next-auth/prisma-adapter@npm:1.0.6"
+  peerDependencies:
+    "@prisma/client": ">=2.26.0 || >=3"
+    next-auth: ^4
+  checksum: 71353dff3ff0515fd37e99edb7e9329783c67349ce671f84ef434a91b9522fdee741d4ed214b764f1eb011219299df15531baaf0c7669a2c2edb65d2d7729f1a
+  languageName: node
+  linkType: hard
+
 "@next/env@npm:13.4.2":
   version: 13.4.2
   resolution: "@next/env@npm:13.4.2"
@@ -270,6 +280,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@panva/hkdf@npm:^1.0.2":
+  version: 1.1.1
+  resolution: "@panva/hkdf@npm:1.1.1"
+  checksum: b8a6d7e72c75e8af7cc9f3221394bb9963e81f899ab60cc1819ccb08fdad44988834518d99846dd6a1c16fadc8ba16e011a0d6102832b6dabda8bb15ba3e973e
+  languageName: node
+  linkType: hard
+
 "@pkgr/utils@npm:^2.3.1":
   version: 2.4.0
   resolution: "@pkgr/utils@npm:2.4.0"
@@ -281,6 +298,27 @@ __metadata:
     picocolors: "npm:^1.0.0"
     tslib: "npm:^2.5.0"
   checksum: 9f0e7fa854e4ba001e00fc992e8aa04af089106bdce2e263bcd033f44a9a83af2dadecb6f76d1017d802e13b1ef3c464fd211acf45f7c8bc8e9f4f0d08b0ddff
+  languageName: node
+  linkType: hard
+
+"@prisma/client@npm:^4.14.1":
+  version: 4.14.1
+  resolution: "@prisma/client@npm:4.14.1"
+  dependencies:
+    "@prisma/engines-version": "npm:4.14.0-67.d9a4c5988f480fa576d43970d5a23641aa77bc9c"
+  peerDependencies:
+    prisma: "*"
+  peerDependenciesMeta:
+    prisma:
+      optional: true
+  checksum: becc5c6254b558ad9b4c10fb0c221c3ccc1177428ed66cff95d5b87b115d512c37e6635fd5e2204be6c28c2062c4b60397f3115c3213c6221ac67609dd41068d
+  languageName: node
+  linkType: hard
+
+"@prisma/engines-version@npm:4.14.0-67.d9a4c5988f480fa576d43970d5a23641aa77bc9c":
+  version: 4.14.0-67.d9a4c5988f480fa576d43970d5a23641aa77bc9c
+  resolution: "@prisma/engines-version@npm:4.14.0-67.d9a4c5988f480fa576d43970d5a23641aa77bc9c"
+  checksum: 833e349239f30838f84baf34ddaeea4d54f03641ab7e6ccf5ad71dce73be9ec0496f6671dd09f394ebb71572dabbee5c2e1d4c8d2bbe4d7c9ce7ec0e9e794398
   languageName: node
   linkType: hard
 
@@ -1052,6 +1090,13 @@ __metadata:
   version: 1.1.0
   resolution: "console-control-strings@npm:1.1.0"
   checksum: d286ffd439aac97472557325e6aa4cc3a2eefe495a70a9640b89508880db4bba1bd1b29bb011608c23033d884c84cac8da95c8f12ca0ec69ccc70d6d5f39c618
+  languageName: node
+  linkType: hard
+
+"cookie@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "cookie@npm:0.5.0"
+  checksum: 23bd6dd64f025869373c6f3c72a870b9bd0e0e6a0ffe734229c032d7aca51972ba584b39100c09141b18043e790862425aae4a60d7449fca565b21cdae0cb3c3
   languageName: node
   linkType: hard
 
@@ -2628,6 +2673,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jose@npm:^4.11.4, jose@npm:^4.14.1":
+  version: 4.14.4
+  resolution: "jose@npm:4.14.4"
+  checksum: 134a0432ea92fd589194007589db5f5b0b0c8aedcca01841c82267f392f87fde6c4af845235e7f4596d27682b38c0e60f209b65719cd509d38e63e1f0ab3c599
+  languageName: node
+  linkType: hard
+
 "js-sdsl@npm:^4.1.4":
   version: 4.4.0
   resolution: "js-sdsl@npm:4.4.0"
@@ -3025,6 +3077,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-auth@npm:^4.22.1":
+  version: 4.22.1
+  resolution: "next-auth@npm:4.22.1"
+  dependencies:
+    "@babel/runtime": "npm:^7.20.13"
+    "@panva/hkdf": "npm:^1.0.2"
+    cookie: "npm:^0.5.0"
+    jose: "npm:^4.11.4"
+    oauth: "npm:^0.9.15"
+    openid-client: "npm:^5.4.0"
+    preact: "npm:^10.6.3"
+    preact-render-to-string: "npm:^5.1.19"
+    uuid: "npm:^8.3.2"
+  peerDependencies:
+    next: ^12.2.5 || ^13
+    nodemailer: ^6.6.5
+    react: ^17.0.2 || ^18
+    react-dom: ^17.0.2 || ^18
+  peerDependenciesMeta:
+    nodemailer:
+      optional: true
+  checksum: 350dce76ec57487f9f0192a9bc6b1a8c474814b19457f56b49b4d301b1d5081cfdc296296ac6091e7f16d16f2ee12ad422ab9a39629cd2ee076e8d86b1427507
+  languageName: node
+  linkType: hard
+
 "next@npm:13.4.2":
   version: 13.4.2
   resolution: "next@npm:13.4.2"
@@ -3090,6 +3167,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nextjs-prisma-graphql-codegen-sample@workspace:."
   dependencies:
+    "@next-auth/prisma-adapter": "npm:^1.0.6"
+    "@prisma/client": "npm:^4.14.1"
     "@types/eslint": "npm:^8"
     "@types/node": "npm:20.1.5"
     "@types/prettier": "npm:^2"
@@ -3102,6 +3181,7 @@ __metadata:
     eslint-config-prettier: "npm:^8.8.0"
     eslint-plugin-simple-import-sort: "npm:^10.0.0"
     next: "npm:13.4.2"
+    next-auth: "npm:^4.22.1"
     npm-run-all: "npm:^4.1.5"
     postcss: "npm:8.4.23"
     prettier: "npm:^2.8.8"
@@ -3235,10 +3315,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"oauth@npm:^0.9.15":
+  version: 0.9.15
+  resolution: "oauth@npm:0.9.15"
+  checksum: f87faa40ee5e3b1e48c847c7ed4c445c8fd3bd19af7846a086fa213d83f40c808ae9576e15862567a3168b33855c4eca019b836f0bb89786ad72134c6719f467
+  languageName: node
+  linkType: hard
+
 "object-assign@npm:^4.0.1, object-assign@npm:^4.1.1":
   version: 4.1.1
   resolution: "object-assign@npm:4.1.1"
   checksum: f5cd1f2f1e82e12207e4f2377d9d7d90fbc0d9822a6afa717a6dcab6930d8925e1ebbbb25df770c31ff11335ee423459ba65ffa2e53999926c328b806b4d73d6
+  languageName: node
+  linkType: hard
+
+"object-hash@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "object-hash@npm:2.2.0"
+  checksum: 40373e057e54ed3385e3097f36dd40922940932dc0c06a3f5540b82dff473333db28135162065863d075962cbc88068c4221b3b8459702fcddcecaaadb22b6ba
   languageName: node
   linkType: hard
 
@@ -3328,6 +3422,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"oidc-token-hash@npm:^5.0.3":
+  version: 5.0.3
+  resolution: "oidc-token-hash@npm:5.0.3"
+  checksum: f7f30caae75c447b3550692eddee8f3fcab17a50780a48edfff19ebfd97c2e63e31ba83e9656dc713d9e0bac76b1f701b8998821df735c9b57d3cf0601c53b14
+  languageName: node
+  linkType: hard
+
 "once@npm:^1.3.0":
   version: 1.4.0
   resolution: "once@npm:1.4.0"
@@ -3364,6 +3465,18 @@ __metadata:
     is-inside-container: "npm:^1.0.0"
     is-wsl: "npm:^2.2.0"
   checksum: e1ac0dd901d5ac8f7ecc334bf6a768d908e396ed97cfe8f857a46ac5ff677d9b1f81b892cb7c2fcdde4e90123db43fb70c0acb39290fe6e9a69c8c0553904f84
+  languageName: node
+  linkType: hard
+
+"openid-client@npm:^5.4.0":
+  version: 5.4.2
+  resolution: "openid-client@npm:5.4.2"
+  dependencies:
+    jose: "npm:^4.14.1"
+    lru-cache: "npm:^6.0.0"
+    object-hash: "npm:^2.2.0"
+    oidc-token-hash: "npm:^5.0.3"
+  checksum: 0b33b98725179025081e7ff74396e148805b0e357ab7172de31065f924941d54c5a272fde2397667ca32e2f136a9dc79782632f519da7d06a9db87d1b1ce82a4
   languageName: node
   linkType: hard
 
@@ -3621,6 +3734,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"preact-render-to-string@npm:^5.1.19":
+  version: 5.2.6
+  resolution: "preact-render-to-string@npm:5.2.6"
+  dependencies:
+    pretty-format: "npm:^3.8.0"
+  peerDependencies:
+    preact: ">=10"
+  checksum: 4def6c1a11b61d5af91cc98a7568938848686715c33a884939fdd098a98770dcaa59c11642c44209f6952ca659554ce6462cfc1913b0cc4d5fa27aea92a9c1fd
+  languageName: node
+  linkType: hard
+
+"preact@npm:^10.6.3":
+  version: 10.14.1
+  resolution: "preact@npm:10.14.1"
+  checksum: a1daf0ad269efbdb3c1ecb67ee505a31c7b594959d790d8010d3c0d8e9515ca6cb42ab19e7ca780ea112e3c02d1bb05c6a3b559909a477f713d8b50de7237b72
+  languageName: node
+  linkType: hard
+
 "prelude-ls@npm:^1.2.1":
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
@@ -3634,6 +3765,13 @@ __metadata:
   bin:
     prettier: bin-prettier.js
   checksum: 38b0a43ea17e83f54b904f8808f7d0fd1d9705ef9627bb40017ee276cbd6f5e7d15bcf816c4467b64cfe14ef109369a981ce61fad9c6022749d041f74a672188
+  languageName: node
+  linkType: hard
+
+"pretty-format@npm:^3.8.0":
+  version: 3.8.0
+  resolution: "pretty-format@npm:3.8.0"
+  checksum: 9b296c22bf6a0c345118d694a35073cb4a4a236a6096adecbbffefc237f703fc80357bd2603f7b51245656966cc44ce403873ce2f41632c24bd143e27f12f6f4
   languageName: node
   linkType: hard
 
@@ -4577,6 +4715,15 @@ __metadata:
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 6a88ed8344d07f2324b304ee36def365d967953b5a9c15baa3213eb3909e86a7da1ee70a4c2133e80c23d6c1987590e9c3c57d874e20a124f9e41620b462fa57
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^8.3.2":
+  version: 8.3.2
+  resolution: "uuid@npm:8.3.2"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: 236a12282c6fa32f326aa1b6d5699a843572e9ab7de84a1507a6b7c315fdcf55bf6ed333fd37d35c5c656f4cb96af998844e1c8cae281c442a1ec3b66df62962
   languageName: node
   linkType: hard
 
