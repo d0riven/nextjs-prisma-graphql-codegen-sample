@@ -383,10 +383,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:*":
+  version: 20.2.1
+  resolution: "@types/node@npm:20.2.1"
+  checksum: d8431e663a93580f9b8f87c5f3db3cdaa32d3ffbe806820975d90f8d2c571928b67e35314dc3abe9a6cd590329fd8030ba7295e824262d5604d922bce6750348
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:20.1.5":
   version: 20.1.5
   resolution: "@types/node@npm:20.1.5"
   checksum: 7c5e634a77629afe8825acf8b79274cfc5c137f0d4b72cd56d5e91a62e5998ec22b4f6c3e1b6ef6ef9e6247dcedfa4a4d7854977a920d6effad4c0d69be4c6f1
+  languageName: node
+  linkType: hard
+
+"@types/nodemailer@npm:^6":
+  version: 6.4.7
+  resolution: "@types/nodemailer@npm:6.4.7"
+  dependencies:
+    "@types/node": "npm:*"
+  checksum: 4fefece34940e4344ecb7d41553ccfd63bf2697124e6335dec5c358953ee53b2b27cb45dec9b306c3fc848cf4ec4344d62ecb091d1a7aadc36c0b9721ab67322
   languageName: node
   linkType: hard
 
@@ -3171,6 +3187,7 @@ __metadata:
     "@prisma/client": "npm:^4.14.1"
     "@types/eslint": "npm:^8"
     "@types/node": "npm:20.1.5"
+    "@types/nodemailer": "npm:^6"
     "@types/prettier": "npm:^2"
     "@types/react": "npm:18.2.6"
     "@types/react-dom": "npm:18.2.4"
@@ -3182,6 +3199,7 @@ __metadata:
     eslint-plugin-simple-import-sort: "npm:^10.0.0"
     next: "npm:13.4.2"
     next-auth: "npm:^4.22.1"
+    nodemailer: "npm:^6.9.2"
     npm-run-all: "npm:^4.1.5"
     postcss: "npm:8.4.23"
     prettier: "npm:^2.8.8"
@@ -3224,6 +3242,13 @@ __metadata:
   version: 2.0.10
   resolution: "node-releases@npm:2.0.10"
   checksum: 2047e77c66497fde77318ac163feb8ee18a3bca67c87b76642aeb0549bd01edcc88d7e002691b982513ebb46c809c456c7e027e38848ce9d2f915473552490b6
+  languageName: node
+  linkType: hard
+
+"nodemailer@npm:^6.9.2":
+  version: 6.9.2
+  resolution: "nodemailer@npm:6.9.2"
+  checksum: f86111f39dbe68ec3433dbf39a128b3b8e8070405127669ceaee6357e111914710b1d6ea7032798a9b6c4c68f11093ce45cdcb31eaa0c382f1f252df0200db98
   languageName: node
   linkType: hard
 
